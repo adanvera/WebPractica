@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="site-header">
+
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="">
+                    </a>
+                </div>
+                <nav id="navegacion" class="navegacion">
+                    <a target="_self" href="nosotros.html">Nosotros</a>
+                    <a target="_self" href="anuncios.html">Anuncios</a>
+                    <a target="_self" href="blog.html">Blog</a>
+                    <a  target="_self" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div> 
+    </header>
+    
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="img/destacada3.jpg" width="30%" alt="">
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llenar formulario de contacto</h2>
+
+        <fieldset>
+            <legend>Información Personal</legend>
+            <form action="">
+                <label for="nombre">Nombre y apellido: </label>
+                <input type="text" id="nombre" placeholder="Tu nombre">
+
+                <label for="correo">Correo: </label>
+                <input type="email" id="correo" placeholder="Tu correo">
+
+                <label for="telefono">Telefono: </label>
+                <input type="tel" id="telefono" placeholder="Tu telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea  id="mensaje" cols="30" rows="10"></textarea>
+
+                
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información sobre Propiedad</legend>
+            <label for="opciones">Vende o Compra: </label>
+            <select  id="opciones">
+                <option value="" disabled selected>-- Seleccione --</option>
+                <option value="">Compra</option>
+                <option value="">Vende</option>
+            </select>
+
+            <label for="presupuesto">Presupuesto: </label>
+            <input type="number" id="presupuesto" min="0" >
+        </fieldset>
+
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <p>Como desea ser Contactado: </p>
+
+            <label for="telefono">Telefono: </label>
+            <input name="contacto" type="radio" value="telefono" id="telefono">
+
+            <label for="email">Correo: </label>
+            <input name="contacto" type="radio" value="email" id="email">
+
+            <p>Si selecciono telefono seleccione fecha y hora</p>
+            <label for="fecha">Fecha: </label>
+            <input type="date" name="fecha" id="">
+
+            <label for="hora">Hora: </label>
+            <input type="time" name="hora" id="hora" min="09:00 " max="16:00">
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="boton btn-verde">
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="footer-cont contenedor ">
+            <div class="desarrollo">
+                <p>Desarrolado por : <a href="#">ADÁN VERA</a></p>
+            </div>
+            <div class="copy">
+                <p>Todos los derechos reservados &copy; 2020</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
